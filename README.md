@@ -8,7 +8,7 @@ steps:
 - uses: actions/checkout@v3
 - uses: liquibase-github-actions/unexpected-changesets@v4.23.0
   with:
-    # The root changelog
+    # The root changelog file
     # string
     # Required
     changelogFile: ""
@@ -18,7 +18,7 @@ steps:
     # Required
     url: ""
 
-    # Changeset contexts to match
+    # Context string to use for filtering
     # string
     # Optional
     contexts: ""
@@ -42,6 +42,11 @@ steps:
     # string
     # Optional
     driverPropertiesFile: ""
+
+    # Label expression to use for filtering
+    # string
+    # Optional
+    labelFilter: ""
 
     # Password to use to connect to the database
     # string
