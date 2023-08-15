@@ -6,7 +6,7 @@ Generate a list of changesets that have been executed but are not in the current
 ```yaml
 steps:
 - uses: actions/checkout@v3
-- uses: liquibase-github-actions/unexpected-changesets@v4.23.0
+- uses: liquibase-github-actions/unexpected-changesets@v4.23.1
   with:
     # The root changelog file
     # string
@@ -75,7 +75,7 @@ The liquibase unexpected changesets action accepts all valid liquibase global op
 ```yaml
 steps:
   - uses: actions/checkout@v3
-  - uses: liquibase-github-actions/unexpected-changesets@v4.23.0
+  - uses: liquibase-github-actions/unexpected-changesets@v4.23.1
     with:
       changelogFile: ""
       url: ""
